@@ -13,7 +13,7 @@ export default function CreateCampaign() {
     // Fetch all segments for dropdown
     const fetchSegments = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/api/segments");
+        const res = await axios.get("https://crmplatform.onrender.com/api/segments");
         setSegments(res.data);
         if (res.data.length > 0) {
           setSelectedSegmentId(res.data[0]._id); // default selection

@@ -11,7 +11,7 @@ export default function CreateSegment() {
 
   const handlePreview = async () => {
     try {
-      const res = await axios.post("http://localhost:3000/api/segments/preview", {
+      const res = await axios.post("https://crmplatform.onrender.com/api/segments/preview", {
         rules,
         combineWith,
       });
@@ -23,7 +23,7 @@ export default function CreateSegment() {
 
   const handleSave = async () => {
     try {
-      await axios.post("http://localhost:3000/api/segments", {
+      await axios.post("https://crmplatform.onrender.com/api/segments", {
         name,
         ruleGroup: { rules, combineWith },
       });
