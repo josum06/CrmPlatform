@@ -31,7 +31,7 @@ export default function CreateCampaign() {
 
     try {
       setSending(true);
-      const res = await axios.post("http://localhost:3000/api/campaigns", {
+      const res = await axios.post("https://crmplatform.onrender.com/api/campaigns", {
         segmentId: selectedSegmentId,
         message,
       });
