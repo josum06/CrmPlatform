@@ -15,7 +15,7 @@ const app = express();
 
 // ✅ CORRECT CORS SETUP
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: ['http://localhost:5173' , 'https://crm-platform-green.vercel.app/'],
   methods: 'GET,POST,PUT,DELETE',
   credentials: true,
 }));

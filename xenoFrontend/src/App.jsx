@@ -45,9 +45,10 @@ const AppContent = () => {
           <div className="flex justify-between items-center h-16">
       
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center shadow-lg transform hover:scale-105 transition-transform duration-200">
-                <span className="text-white font-bold text-lg">C</span>
-              </div>
+             <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center shadow-lg transform hover:scale-105 transition-transform duration-200 overflow-hidden">
+  < img src="/crm.png" alt="CRM Logo" className="w-full h-full object-cover" />
+</div>
+
               <h1 className="text-2xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
                 CRM
               </h1>
